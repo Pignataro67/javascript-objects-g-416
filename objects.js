@@ -13,13 +13,15 @@
 //   return playlist
 // }
 
-var playlist = { 'artist': 'Song' };
-
- function updatePlaylist(list, artist, song) {
-  return Object.assign({}, list, {[artist]: song});
+var playlist = {
+  'Jack Johnson': 'Banana Pancakes',
 };
 
- function removeFromPlaylist(list, artist) {
-  delete list[artist];
-  return list;
-};
+ function updatePlaylist(playlist, artistName, songTitle) {
+  return Object.assign({}, playlist, {[artistName]: songTitle});
+}
+
+ function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName];
+  return playlist;
+}
