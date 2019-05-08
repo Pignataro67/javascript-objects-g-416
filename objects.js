@@ -3,6 +3,6 @@ var playlist = {
   AliceInChains: 'Man in the Box'
 };
 
-function updatePlaylist({}, 'Korn', 'Clown') {
+function updatePlaylist(playlist, artist, song) {
   
 }
