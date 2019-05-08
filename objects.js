@@ -13,12 +13,13 @@
 //   return playlist
 // }
 
-var playlist = { "Lady Gaga": "Born This Way" };
+var playlist = { 'artist': 'Song' };
 
- function updatePlaylist(playlist, artist, song) { 
-  return Object.assign(playlist, { [artist]: song });
-}
+ function updatePlaylist(list, artist, song) {
+  return Object.assign({}, list, {[artist]: song});
+};
 
- function removeFromPlaylist(playlist, artist) {
-  delete playlist[artist];
-  return playlist;
+ function removeFromPlaylist(list, artist) {
+  delete list[artist];
+  return list;
+};
